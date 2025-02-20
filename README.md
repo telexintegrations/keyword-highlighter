@@ -61,7 +61,7 @@ Returns metadata about the integration.
 
 ```json
 
-`{
+{
   "data": {
     "author": "Laban Kibet",
     "descriptions": {
@@ -73,7 +73,7 @@ Returns metadata about the integration.
       "Supports multiple highlight styles"
     ]
   }
-}` 
+}
 ```
 ----------
 
@@ -94,7 +94,7 @@ Highlights keywords in a given message based on user settings.
     {"label": "highlightStyle", "type": "string", "required": true, "default": "bold", "description": ""}
   ],
   "message": "Check this alert now!"
-}` 
+} 
 ```
 **📤 Response Example:**
 
@@ -104,7 +104,7 @@ Highlights keywords in a given message based on user settings.
   "message": "Check this **alert** now!",
   "status": "success",
   "username": "keyword-highlighter-bot"
-}` 
+} 
 ```
 ----------
 
@@ -115,11 +115,6 @@ Run the test suite with:
 ```sh
 pytest tests/` 
 
-This tests:
-
--   The **integration metadata endpoint**
--   The **keyword highlighting function**
--   The **API response correctness**
 ```
 ----------
 
