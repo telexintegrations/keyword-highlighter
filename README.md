@@ -21,7 +21,7 @@ Here’s a preview of the Keyword Highlighter integration:
 ### **1️⃣ Clone the Repository**
 
 ```sh
-git clone https://github.com/yourusername/keyword-highlighter.git
+git clone https://github.com/telexintegrations/keyword-highlighter
 cd keyword-highlighter` 
 ```
 ### **2️⃣ Create a Virtual Environment**
