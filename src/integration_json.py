@@ -39,7 +39,7 @@ INTEGRATION_JSON = {
                 "label": "highlightStyle",
                 "type": "string",
                 "required": True,
-                "default": "italic",
+                "default": "uppercase",
                 "description": "Set the style for highlighted words (bold, italic, uppercase)."
             }
         ],
