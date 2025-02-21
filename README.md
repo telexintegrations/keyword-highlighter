@@ -18,6 +18,11 @@ A **Telex integration** that processes messages and highlights specific keywords
 
 Here’s a preview of the Keyword Highlighter integration:
 
+![setings](https://github.com/user-attachments/assets/85ba71a5-64d5-49e9-b78f-c7e8cd8f0183)
+![settings-](https://github.com/user-attachments/assets/6da83758-5578-46a4-a5ef-310d571250b3)
+![chat](https://github.com/user-attachments/assets/8a8145d8-0c89-44ea-8ce3-1f28ef83b4b6)
+
+
 ## **⚙️ Setup & Installation**
 
 ### **1️⃣ Clone the Repository**
