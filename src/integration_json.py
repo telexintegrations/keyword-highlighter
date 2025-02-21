@@ -16,7 +16,7 @@ INTEGRATION_JSON = {
             "background_color": "#ffffff"
         },
         "integration_category": "Communication & Collaboration",
-        "integration_type": "Modifier",
+        "integration_type": "modifier",
         "is_active": True,
         "key_features": [
             "🔍 Instantly identifies and highlights specified words.",
