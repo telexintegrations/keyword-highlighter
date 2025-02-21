@@ -1,17 +1,19 @@
-### **Keyword Highlighter API 🚀**
+### **Keyword Highlighter 🚀**
 
-A FastAPI-based service that processes messages and highlights specific keywords based on user-defined settings.
+A **Telex integration** that processes messages and highlights specific keywords based on user-defined settings.
 
-----------
+
 
 ## **📌 Features**
 
 -   🔍 **Keyword Highlighting** – Automatically highlights specified words in a message.
--   🎨 **Custom Styles** – Supports **bold, italic, and uppercase** highlighting.
--   🔄 **Dynamic Processing** – Users can set their own highlight words and styles.
--   📡 **REST API** – Exposes endpoints for easy integration.
+    
+-   🎨 **Custom Styles** – Supports **bold, italic, underline, strikethrough, uppercase, custom colors, and background highlights**.
+    
+-   ♻️ **Dynamic Processing** – Users can define keywords and choose highlight styles.
+    
+-   🔧 **Modifier Integration** – Seamlessly works within Telex channels.
 
-----------
 ## 🔗 Integration Preview
 
 Here’s a preview of the Keyword Highlighter integration:
@@ -21,7 +23,7 @@ Here’s a preview of the Keyword Highlighter integration:
 ### **1️⃣ Clone the Repository**
 
 ```sh
-git clone https://github.com/telexintegrations/keyword-highlighter
+git clone https://github.com/yourusername/keyword-highlighter.git
 cd keyword-highlighter` 
 ```
 ### **2️⃣ Create a Virtual Environment**
@@ -43,9 +45,10 @@ pip install -r requirements.txt`
 ### **Start the FastAPI Server**
 
 ```sh
-`uvicorn src.main:app --reload` 
+uvicorn src.main:app --reload` 
 
 The API will be available at **`http://127.0.0.1:8000`**.
+
 ```
 ----------
 
@@ -64,13 +67,12 @@ Returns metadata about the integration.
 {
   "data": {
     "author": "Laban Kibet",
-    "descriptions": {
-      "app_name": "Keyword Highlighter",
-      "app_description": "A bot that highlights specific keywords in messages."
+    "date": {
+      "created_at": "2025-02-13",
+      "updated_at": "2025-02-21"
     },
-    "key_features": [
-      "Highlight specific words",
-      "Supports multiple highlight styles"
+    "descriptions":
+    ...
     ]
   }
 }
@@ -88,23 +90,20 @@ Highlights keywords in a given message based on user settings.
 ```json
 
 {
+  "message": "Check this alert now!",
   "channel_id": "123",
   "settings": [
-    {"label": "highlightWords", "type": "multi-select", "required": true, "default": "alert,check", "description": ""},
-    {"label": "highlightStyle", "type": "string", "required": true, "default": "bold", "description": ""}
-  ],
-  "message": "Check this alert now!"
-} 
+    {"label": "highlightWords", "type": "multi-select", "required": true, "default": "important,urgent"},
+    {"label": "highlightStyle", "type": "dropdown", "required": true, "default": "red-color"}
+  ]
+}
 ```
 **📤 Response Example:**
 
 ```json
 {
-  "event_name": "message_highlighted",
-  "message": "Check this **alert** now!",
-  "status": "success",
-  "username": "keyword-highlighter-bot"
-} 
+  "message": "Check this <span style='color: red;'>alert</span> now!"
+}
 ```
 ----------
 
@@ -117,6 +116,7 @@ pytest tests/`
 
 ```
 ----------
+For more details, refer to the[Telex Integration Documentation](https://docs.telex.im/docs/Integrations/intro)
 
 ## **📜 License**
 
