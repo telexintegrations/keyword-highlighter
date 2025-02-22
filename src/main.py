@@ -40,6 +40,7 @@ async def modify_message(request: ModifierRequest):
 def process_highlight(message: str, settings: List[Setting]) -> str:
     """Applies keyword highlighting based on the settings provided."""
     highlight_words, highlight_style = extract_settings(settings)
+    matched_words = [word for word in highlight_words if re.search(rf"\b{re.escape(word)}\b", message, re.IGNORECASE)]
     return apply_highlighting(message, highlight_words, highlight_style)
 
 def extract_settings(settings: List[Setting]) -> tuple:
