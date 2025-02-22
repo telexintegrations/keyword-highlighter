@@ -12,7 +12,7 @@ INTEGRATION_JSON = {
                 "specified keywords in channel messages. It enhances readability and ensures important information stands out."
             ),
             "app_logo": "https://img.icons8.com/?size=100&id=53bqkemCNnUO&format=png&color=000000",  
-            "app_url": "https://keyword-highlighter-debug.onrender.com/",
+            "app_url": "https://keyword-highlighter.onrender.com/",
             "background_color": "#ffffff"
         },
         "integration_category": "Communication & Collaboration",
